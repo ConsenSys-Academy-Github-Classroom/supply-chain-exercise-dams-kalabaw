@@ -3,10 +3,10 @@ pragma solidity >=0.5.16 <0.9.0;
 
 contract SupplyChain {
     // <owner>
-    address owner;
+    address public owner;
     // <skuCount>
 
-    uint256 skuCount;
+    uint256 public skuCount;
 
     // <items mapping>
     mapping(uint => Item) items;
