@@ -9,6 +9,7 @@ contract SupplyChain {
     uint256 skuCount;
 
     // <items mapping>
+    mapping(uint => Item) items;
 
     // <enum State: ForSale, Sold, Shipped, Received>
 
@@ -23,9 +24,9 @@ contract SupplyChain {
 
     struct Item {
         string name;
-        uint256 sku;
-        uint256 price;
-        state state;
+        uint sku;
+        uint price;
+        State state;
         address payable seller;
         address payable buyer;
     }
